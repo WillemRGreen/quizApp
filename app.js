@@ -227,10 +227,10 @@ function generateIncorrectPage(){
   <h3 class="welcomePageH2">
       Brick! The correct answer was ${store.questions[store.currentQuestion-1].correctAnswer}
     </h3>
-    <p>
+    <p id="paragraphText">
       You have ${store.score} out of ${store.questions.length}
     </p>
-    <p>
+    <p id="paragraphText">
       You are on ${store.currentQuestion} out of ${store.questions.length}
     </p>
     <form>
@@ -238,8 +238,7 @@ function generateIncorrectPage(){
         <button type="submit" id = "nextQ">Next Question!</button>
       </div>
     </form>
-    <div>
-  `
+    <div>`
   return incorrectPage;
 }
 
